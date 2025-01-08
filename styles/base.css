@@ -1,0 +1,139 @@
+body {
+    display: grid;
+    height: 100vh;
+    width: 100vw;
+    /* grid-template: [rows] / [columns] */
+    grid-template: auto 2fr auto / 1fr auto auto;
+    color: white;
+    text-align: center;
+}
+
+header,
+footer {
+    background-color: #174562;
+    grid-column: 1/4;
+}
+
+header {
+    display: grid;
+    grid-template: 1fr auto / auto;
+
+}
+
+main {
+    color: black;
+    display: grid;
+    grid-template-rows: auto 1fr;
+    grid-template-columns: 3fr 1fr;
+    text-align: center;
+    background-color: white;
+}
+
+li {
+    list-style: none;
+}
+
+h2 {
+    /* border: 2px solid blue; */
+    background-color: #174562;
+    border-radius: 5px 5px 5px 5px;
+    color: white;
+    margin: 10px 5% 10px 5%;
+    text-align: center;
+    max-width: fit-content;
+    padding: 10px 30% 10px 30%;
+}
+
+section>h2 {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+section>div>img {
+    float: left;
+    border: 2px solid #174562;
+    margin-left: 10px;
+}
+
+section>img {
+    float: right;
+    border: 2px solid #174562;
+    margin-right: 15px;
+}
+
+section>div {
+    display: flex;
+}
+
+main>section:first-child {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 20px 20px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+
+}
+
+main>section:last-child {
+    grid-column: 2/4;
+    display: grid;
+    grid-template: auto 4fr / 1fr;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 20px 20px;
+    padding: 20px;
+    grid-row: 2/3;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+
+}
+
+main>section:last-child>ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+}
+
+nav {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    background-color: #2e2e2e;
+
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+}
+
+nav a:hover {
+    text-decoration: overline;
+}
+
+nav a:visited {
+    color: white;
+}
+
+main>a {}
+
+.card a {
+    color: black;
+}
+
+.card a:hover {
+    display: inline-block;
+    transition: transform 0.3s ease;
+    color: #174562;
+    transform: scale(1.1);
+}
+
+.card a:visited {
+    color: black;
+}
+
+a {
+    text-decoration: none;
+    font-size: large;
+}
