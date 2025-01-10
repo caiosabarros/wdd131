@@ -1,0 +1,40 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+header,
+footer {
+    background-color: #174562;
+    color: white;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+    text-align: center;
+}
+
+li {
+    text-decoration: none;
+    list-style: none;
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: white
+}
+
+li:hover {
+    background-color: #091f2c;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+figure img {
+    max-width: 100%;
+    height: auto;
+}
