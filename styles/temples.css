@@ -11,6 +11,7 @@ footer {
 header div {
     display: flex;
     justify-content: space-evenly;
+    max-width: 100%;
 }
 
 nav ul {

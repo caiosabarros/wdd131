@@ -9,5 +9,5 @@ hamMenu.addEventListener("click", () => {
 const menu = document.querySelector("nav ul");
 const matcher = document.querySelector("#menu-matcher");
 menu.addEventListener("click", (e) => {
-    matcher.textContent = e.target.childNodes[0].data;
+    matcher.textContent = e.target.textContent;
 })
