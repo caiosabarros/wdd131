@@ -16,8 +16,11 @@
 
 <body>
     <header>
-        <h1>Temple Album</h1>
-        <nav>
+        <div>
+            <h1>Temple Album</h1>
+            <p id="menu"></p>
+        </div>
+        <nav class="navigation">
             <ul>
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Old</a></li>
@@ -28,7 +31,7 @@
         </nav>
     </header>
     <main>
-        <h2 id="menu-matcher">Heading that Matches Menu</h2>
+        <h2 id="menu-matcher">Home</h2>
         <figure>
             <img src="/images/manhattan_temple_lds.webp" alt="New York Manhattan Temple">
             <figcaption>New York Manhattan Temple</figcaption>
@@ -70,6 +73,7 @@
         <p>&copy; <span id="currentyear"></span>, Caio Sa, Brazil</p>
         <p id="lastModified"></p>
     </footer>
+    <script src="scripts/getdates.js" defer></script>
     <script src="scripts/temples.js" defer></script>
 </body>
 
